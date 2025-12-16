@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>백정이 | Network Engineer Portfolio</title>
+  <style>
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+      background:#0f172a;
+      color:#e5e7eb;
+      line-height:1.6;
+    }
+    a{color:#38bdf8;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:48px 24px}
+    header{margin-bottom:56px}
+    header h1{font-size:2.4rem;margin:0}
+    header h2{font-size:1.2rem;font-weight:400;color:#94a3b8;margin:8px 0 16px}
+    .contact{margin-top:12px;color:#cbd5f5}
+    section{margin-bottom:64px}
+    section h3{font-size:1.6rem;border-bottom:1px solid #334155;padding-bottom:8px;margin-bottom:24px}
+    .card{background:#020617;border:1px solid #1e293b;border-radius:14px;padding:24px;margin-bottom:20px}
+    ul{padding-left:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .btn{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 16px;
+      border-radius:8px;
+      background:#1e293b;
+      color:#7dd3fc;
+      border:1px solid #334155;
+      font-size:0.95rem;
+    }
+    .btn:hover{background:#0f172a}
+    footer{border-top:1px solid #334155;padding-top:24px;text-align:center;color:#94a3b8;font-size:0.9rem}
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>백정이</h1>
+  <h2>Network Engineer · Security Infrastructure</h2>
+  <p>
+    네트워크·서버·보안 인프라의 <strong>연결 구조와 트래픽 흐름</strong>를 이해하고,
+    안정성과 보안을 동시에 고려한 인프라를 설계·구축하는 엔지니어를 지향합니다.
+  </p>
+  <div class="contact">
+    📧 qorwjddl1234@naver.com · ☎ 010-7520-2175 · 📍 Seoul<br />
+    GitHub: <a href="https://github.com/bjy5656" target="_blank">github.com/bjy5656</a>
+  </div>
+</header>
+
+<section>
+  <h3>Core Skills</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Network</h4>
+      <ul>
+        <li>Subnetting, VLSM</li>
+        <li>Static / Dynamic Routing (RIP, EIGRP, OSPF)</li>
+        <li>VLAN (Access / Trunk / Native)</li>
+        <li>NAT (PAT / Static), GRE, IPsec VPN</li>
+        <li>GNS3, Packet Tracer 기반 설계·실습</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>System & Server</h4>
+      <ul>
+        <li>Linux (Rocky Linux) 계정·권한·서비스 관리</li>
+        <li>FTP / TFTP / DNS 서버 구축</li>
+        <li>firewalld, SSH 공개키 인증</li>
+        <li>DBMS 이중화 및 정기 백업</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Security</h4>
+      <ul>
+        <li>주요정보통신기반시설 기준 취약점 점검</li>
+        <li>네트워크·DBMS·웹 취약점 진단</li>
+        <li>패킷 캡처 및 분석 (Wireshark)</li>
+        <li>권한 상승 / Race Condition 실습</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Projects & Portfolio</h3>
+
+  <div class="card">
+    <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 및 웹 서비스 구축</h4>
+    <p>
+      기업 환경을 가정한 네트워크·서버·보안 인프라를 설계하고,
+      주요정보통신기반시설 가이드 기준에 따라 취약점 진단 및 보안 설정을 수행했습니다.
+      프로젝트에서 네트워크 및 DBMS 파트를 담당했습니다.
+    </p>
+    <ul>
+      <li>서브넷 설계, OSPF, NAT, GRE over IPsec VPN</li>
+      <li>DBMS 보안 설정 및 이중화·백업 구성</li>
+      <li>네트워크·DBMS·웹 취약점 점검 및 개선</li>
+    </ul>
+    <a class="btn" href="./틈새걸음_포트폴리오_최종프로젝트(기업맞춤보안인프라및웹서비스구축)_백정이.pdf" target="_blank">📄 포트폴리오 PDF 열람</a>
+  </div>
+
+  <div class="card">
+    <h4>세미 프로젝트 · 대학 네트워크 인프라 구축</h4>
+    <p>
+      대학 내부망을 가정하여 사무동·강의동·서버존을 분리한 네트워크를 설계하고,
+      DNS/FTP/TFTP 서비스를 직접 구축·운영했습니다.
+    </p>
+    <ul>
+      <li>VLAN 및 NAT 기반 내부망 분리</li>
+      <li>FTP/TFTP/DNS 서비스 운영 및 접근 제어</li>
+      <li>GNS3 기반 네트워크 토폴로지 설계</li>
+    </ul>
+    <a class="btn" href="./SUN교사_포트폴리오_세미프로젝트(인프라구축)_백정이.pdf" target="_blank">📄 포트폴리오 PDF 열람</a>
+  </div>
+
+  <div class="card">
+    <h4>중간 프로젝트 · SafeDugout 웹 서비스</h4>
+    <p>
+      Java(Servlet/JSP) 기반 야구 커뮤니티 및 중고거래 플랫폼 개발 프로젝트로,
+      백엔드 구조 이해와 서버 연동 경험을 쌓았습니다.
+    </p>
+    <ul>
+      <li>Servlet / JSP / MyBatis 기반 MVC2 구조</li>
+      <li>Oracle·MySQL 연동 및 CRUD 구현</li>
+      <li>보안 관점에서의 입력값 검증</li>
+    </ul>
+    <a class="btn" href="https://github.com/Team1-SafeDugout/SafeDugout_backend.git" target="_blank">🐙 GitHub Repository</a>
+    <a class="btn" href="./safe_dugout_포트폴리오_중간프로젝트(웹개발)_백정이.pdf" target="_blank">📄 포트폴리오 PDF</a>
+  </div>
+
+  <div class="card">
+    <h4>패킷 분석 보고서</h4>
+    <p>
+      Nmap 기반 포트 스캔 결과를 Wireshark로 분석하여
+      방화벽 설정 유무에 따른 패킷 흐름 차이를 정리한 보고서입니다.
+    </p>
+    <ul>
+      <li>TCP SYN / FIN 스캔 패킷 분석</li>
+      <li>UDP, ICMP 패킷 흐름 분석</li>
+      <li>TLS Handshake 패킷 구조 이해</li>
+    </ul>
+    <a class="btn" href="./패킷분석보고서_백정이.pdf" target="_blank">📄 보고서 열람</a>
+  </div>
+</section>
+
+<section>
+  <h3>Certifications</h3>
+  <div class="card">
+    <ul>
+      <li>CCNA (Cisco)</li>
+      <li>네트워크관리사 2급</li>
+      <li>정보처리기사</li>
+      <li>건축기사</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Career Goal</h3>
+  <div class="card">
+    <p>
+      네트워크 엔지니어로서 안정적인 인프라 운영 경험을 축적한 뒤,
+      보안 솔루션 및 침해사고 대응 영역까지 확장 가능한
+      인프라·보안 융합 엔지니어로 성장하는 것이 목표입니다.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2025 백정이 · Hosted on GitHub Pages
+</footer>
+
+</div>
+</body>
+</html>
