@@ -170,13 +170,19 @@
   <div class="card">
     <h4>중간 프로젝트 · SafeDugout (웹 개발)</h4>
     <p>
-      야구 커뮤니티 및 중고거래 플랫폼을 제공하는 웹 서비스 구축 프로젝트입니다.
-      Java(Servlet/JSP) 기반으로 MVC2 구조를 적용하였으며, 커뮤니티·거래 기능을 통합한 서비스 흐름을 설계했습니다.
+      <strong>작업기간</strong> : 2025.07.30 ~ 2025.08.29<br />
+      <strong>작업인원</strong> : 3명<br />
+      <strong>사용기술</strong> : VS Code, Java, Apache Tomcat, Oracle 21c
+    </p>
+    <p>
+      야구 커뮤니티 및 굿즈 중고거래 플랫폼을 제공하는 웹 서비스를 팀원들과 함께 개발한 프로젝트입니다.
+      MVC2 패턴을 기반으로 백엔드 구조를 설계하였으며, View 영역에서는 EL과 JSTL을 활용하여 데이터 출력과 흐름을 구현했습니다.
+      프로젝트에서 백엔드 개발 기준으로 메인 페이지, 아이디/비밀번호 찾기, 메인 공지사항 기능을 담당했습니다.
     </p>
     <ul>
       <li>Servlet / JSP / MyBatis 기반 MVC2 아키텍처</li>
-      <li>Oracle·MySQL 연동 및 CRUD 구현</li>
-      <li>입력값 검증 및 기본 보안 고려</li>
+      <li>Oracle DB 연동 및 CRUD 구현</li>
+      <li>EL, JSTL 기반 View 로직 구성</li>
     </ul>
     <a class="btn" href="https://www.notion.so/1-SafeDugout_-2807b112410a8118a0cad8754224c885" target="_blank">📘 프로젝트 노션 보기</a>
     <a class="btn" href="https://github.com/Team1-SafeDugout/SafeDugout_backend.git" target="_blank">🐙 GitHub Repository</a>
@@ -186,13 +192,21 @@
   <div class="card">
     <h4>세미 프로젝트 · 대학 네트워크 인프라 구축</h4>
     <p>
-      대학 시설을 가정한 내부망 네트워크 및 서버 인프라 구축 프로젝트로,
-      VLAN 분리, NAT 구성, 서버 서비스 운영 및 보안 설정을 수행했습니다.
+      <strong>작업기간</strong> : 2025.10.22 ~ 2025.10.28<br />
+      <strong>작업인원</strong> : 6명<br />
+      <strong>사용기술</strong> : VMware, Rocky Linux, GNS3, Packet Tracer
+    </p>
+    <p>
+      가상의 대학교 환경을 설정하여 기관 규모와 목적에 맞는 네트워크 인프라 및 서버를 구축한 프로젝트입니다.
+      VLAN 기반 네트워크 분리, 라우팅 및 NAT 설정을 통해 내부망을 구성하고,
+      DNS·FTP·TFTP 서버를 직접 구축하여 서비스 운영 환경을 구현했습니다.
+      또한 Kali Linux를 활용한 기본적인 보안 진단을 수행했습니다.
+      본 프로젝트에서 네트워크 설계, 라우팅·NAT 설정, DNS/FTP/TFTP 서버 구축 및 테스트를 담당했습니다.
     </p>
     <ul>
-      <li>사무동·강의동·서버존 네트워크 분리</li>
-      <li>DNS / FTP / TFTP 서버 구축 및 운영</li>
-      <li>GNS3 기반 네트워크 토폴로지 설계</li>
+      <li>VLAN 및 NAT 기반 내부 네트워크 분리</li>
+      <li>Routing, NAT 설정 및 트래픽 흐름 설계</li>
+      <li>DNS / FTP / TFTP 서버 구축 및 운영 테스트</li>
     </ul>
     <a class="btn" href="https://www.notion.so/2a87b112410a81809573ff810dedc291" target="_blank">📘 프로젝트 노션 보기</a>
     <a class="btn" href="https://drive.google.com/drive/folders/19FKuGD6QTXYn2zzSwXZEZDse-zZ7YOZQ" target="_blank">☁️ 서버 자료 (Drive)</a>
@@ -200,15 +214,45 @@
   </div>
 
   <div class="card">
-    <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 및 웹 서비스 구축</h4>
+    <h4>패킷 분석 보고서</h4>
     <p>
-      기업 환경을 가정하여 네트워크·서버·DB·웹 전반의 보안 인프라를 설계하고,
-      주요정보통신기반시설 가이드 기준에 따라 취약점 진단 및 개선을 수행한 프로젝트입니다.
+      <strong>작업기간</strong> : 2025.10.23<br />
+      <strong>작업인원</strong> : 1명<br />
+      <strong>사용기술</strong> : Wireshark, Nmap
+    </p>
+    <p>
+      Wireshark를 활용하여 ICMP, TCP, UDP 패킷 흐름을 분석하고,
+      Nmap을 이용해 SYN, UDP 스캔을 수행했을 때 발생하는 패킷의 특성과 차이를 정리한 분석 보고서입니다.
+      방화벽 설정 유무에 따른 응답 패턴과 패킷 구조를 비교·분석했습니다.
     </p>
     <ul>
-      <li>서브넷 설계, OSPF, NAT, GRE over IPsec VPN</li>
-      <li>DBMS 보안 설정 및 이중화·정기 백업</li>
-      <li>네트워크·DBMS·웹 취약점 점검 및 조치</li>
+      <li>TCP SYN / UDP 스캔 패킷 분석</li>
+      <li>ICMP, TCP, UDP 패킷 흐름 비교</li>
+      <li>네트워크 통신 동작 원리 분석</li>
+    </ul>
+    <a class="btn" href="./패킷분석보고서_백정이.pdf" target="_blank">📄 보고서 열람</a>
+  </div>
+
+  <div class="card">
+    <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 및 웹 서비스 구축</h4>
+    <p>
+      <strong>작업기간</strong> : 2025.11.03 ~ 2025.12.12<br />
+      <strong>작업인원</strong> : 3명<br />
+      <strong>사용기술</strong> : VMware, Rocky Linux, Kali Linux, GNS3, Packet Tracer, Wireshark, Burp Suite, 문서도구(Excel/Word/HWP)
+    </p>
+    <p>
+      웹 서비스를 제공하는 가상의 기업 환경을 설정하고,
+      보안 침해 시나리오와 인프라 구성도를 기반으로
+      주요정보통신기반시설 취약점 분석·평가 가이드를 기준으로
+      네트워크, DBMS, 웹 서비스 전반에 대한 취약점 진단 및 보안 설정을 수행한 프로젝트입니다.
+      또한 PHP 기반 웹 서비스에 대한 취약점 진단을 수행했습니다.
+      본 프로젝트에서 네트워크 인프라 구축, DBMS 보안 설정,
+      VPN 구성, DB 이중화 및 백업 설계를 담당했습니다.
+    </p>
+    <ul>
+      <li>네트워크 구축 및 VPN(GRE/IPsec) 구성</li>
+      <li>DBMS 보안 설정 및 이중화·정기 백업 설계</li>
+      <li>주요정보통신기반시설 기준 취약점 진단 및 조치</li>
     </ul>
     <a class="btn" href="https://hyper-carob-48d.notion.site/_3-29d13fe23d828055838ad6cd92cf0b7d" target="_blank">📘 프로젝트 노션 보기</a>
     <a class="btn" href="https://drive.google.com/drive/folders/1aSK6JrlMRjE3QyiOq4JC9tddfvfrHXpq" target="_blank">☁️ 서버 자료 (Drive)</a>
