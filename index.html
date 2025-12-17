@@ -6,14 +6,14 @@
   <title>백정이 | Network Engineer Portfolio</title>
   <style>
   :root{
-    --bg-main:#f5f9ff;          /* 전체 배경 (밝은 네트워크 블루) */
-    --bg-card:#ffffff;         /* 카드 배경 */
-    --line:#d6e2f0;             /* 구분선 */
-    --text-main:#0f172a;        /* 기본 텍스트 */
-    --text-sub:#475569;         /* 보조 텍스트 */
-    --accent-net:#2563eb;       /* 네트워크 블루 */
-    --accent-sec:#16a34a;       /* 보안 그린 */
-    --accent-warn:#f59e0b;      /* 포인트 */
+    --bg-main:#f5f9ff;
+    --bg-card:#ffffff;
+    --line:#d6e2f0;
+    --text-main:#0f172a;
+    --text-sub:#475569;
+    --accent-net:#2563eb;
+    --accent-sec:#16a34a;
+    --accent-warn:#f59e0b;
   }
 
   body{
@@ -63,9 +63,35 @@
 
   .card h4{
     margin-top:0;
-    margin-bottom:10px;
+    margin-bottom:6px;
     color:var(--accent-sec);
     letter-spacing:0.2px;
+  }
+
+  .contribution{
+    margin:12px 0 18px;
+  }
+
+  .contribution-label{
+    font-size:0.9rem;
+    color:var(--text-sub);
+    margin-bottom:6px;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .bar-bg{
+    width:100%;
+    height:10px;
+    background:#e5edf8;
+    border-radius:999px;
+    overflow:hidden;
+  }
+
+  .bar-fill{
+    height:100%;
+    background:linear-gradient(90deg,var(--accent-net),var(--accent-sec));
+    border-radius:999px;
   }
 
   ul{padding-left:20px}
@@ -123,7 +149,7 @@
         안정성과 보안을 동시에 고려한 인프라를 설계·구축하는 엔지니어를 지향합니다.
       </p>
       <div class="contact">
-        📧 qorwjddl1234@naver.com · 📍 Seoul<br />
+        📧 qorwjddl1234@naver.com · ☎ 010-7520-2175 · 📍 Seoul<br />
         GitHub: <a href="https://github.com/bjy5656" target="_blank">github.com/bjy5656</a>
       </div>
     </div>
@@ -169,6 +195,10 @@
 
   <div class="card">
     <h4>중간 프로젝트 · SafeDugout (웹 개발)</h4>
+    <div class="contribution">
+      <div class="contribution-label"><span>개인 기여도</span><span>25%</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:25%"></div></div>
+    </div>
     <p>
       <strong>작업기간</strong> : 2025.07.30 ~ 2025.08.29<br />
       <strong>작업인원</strong> : 3명<br />
@@ -181,7 +211,7 @@
     </p>
     <ul>
       <li>Servlet / JSP / MyBatis 기반 MVC2 아키텍처</li>
-      <li>Oracle DB 연동 및 데이터 조회, 수정 구현</li>
+      <li>Oracle DB 연동 및 CRUD 구현</li>
       <li>EL, JSTL 기반 View 로직 구성</li>
     </ul>
     <a class="btn" href="https://www.notion.so/1-SafeDugout_-2807b112410a8118a0cad8754224c885" target="_blank">📘 프로젝트 노션 보기</a>
@@ -191,6 +221,10 @@
 
   <div class="card">
     <h4>세미 프로젝트 · 대학 네트워크 인프라 구축</h4>
+    <div class="contribution">
+      <div class="contribution-label"><span>개인 기여도</span><span>20%</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:20%"></div></div>
+    </div>
     <p>
       <strong>작업기간</strong> : 2025.10.22 ~ 2025.10.28<br />
       <strong>작업인원</strong> : 6명<br />
@@ -198,7 +232,9 @@
     </p>
     <p>
       가상의 대학교 환경을 설정하여 기관 규모와 목적에 맞는 네트워크 인프라 및 서버를 구축한 프로젝트입니다.
-      라우팅 및 NAT 설정을 통한 내부망 구성, 리눅스 서버 계정 및 권한 설정, 리눅스 서버 서비스 구축, Kali Linux를 활용한 기본적인 보안 진단 수행 등을 통해 진행되었습니다.
+      VLAN 기반 네트워크 분리, 라우팅 및 NAT 설정을 통해 내부망을 구성하고,
+      DNS·FTP·TFTP 서버를 직접 구축하여 서비스 운영 환경을 구현했습니다.
+      또한 Kali Linux를 활용한 기본적인 보안 진단을 수행했습니다.
       본 프로젝트에서 네트워크 설계, 라우팅·NAT 설정, DNS/FTP/TFTP 서버 구축 및 테스트를 담당했습니다.
     </p>
     <ul>
@@ -233,6 +269,10 @@
 
   <div class="card">
     <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 및 웹 서비스 구축</h4>
+    <div class="contribution">
+      <div class="contribution-label"><span>개인 기여도</span><span>25%</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:25%"></div></div>
+    </div>
     <p>
       <strong>작업기간</strong> : 2025.11.03 ~ 2025.12.12<br />
       <strong>작업인원</strong> : 3명<br />
@@ -242,7 +282,8 @@
       웹 서비스를 제공하는 가상의 기업 환경을 설정하고,
       보안 침해 시나리오와 인프라 구성도를 기반으로
       주요정보통신기반시설 취약점 분석·평가 가이드를 기준으로
-      네트워크, DBMS, php 기반 웹 서비스 전반에 대한 취약점 진단 및 보안 설정을 수행한 프로젝트입니다.
+      네트워크, DBMS, 웹 서비스 전반에 대한 취약점 진단 및 보안 설정을 수행한 프로젝트입니다.
+      또한 PHP 기반 웹 서비스에 대한 취약점 진단을 수행했습니다.
       본 프로젝트에서 네트워크 인프라 구축, DBMS 보안 설정,
       VPN 구성, DB 이중화 및 백업 설계를 담당했습니다.
     </p>
