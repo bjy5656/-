@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>백정이 | Network Engineer Portfolio</title>
+
   <style>
   :root{
     --bg-main:#f5f9ff;
@@ -13,7 +14,6 @@
     --text-sub:#475569;
     --accent-net:#2563eb;
     --accent-sec:#16a34a;
-    --accent-warn:#f59e0b;
   }
 
   body{
@@ -30,7 +30,7 @@
   .container{max-width:1100px;margin:0 auto;padding:56px 24px}
 
   header{
-    margin-bottom:72px;
+    margin-bottom:56px;
     padding:36px;
     border:1px solid var(--line);
     border-radius:18px;
@@ -63,23 +63,19 @@
 
   .card h4{
     margin-top:0;
-    margin-bottom:6px;
+    margin-bottom:8px;
     color:var(--accent-sec);
-    letter-spacing:0.2px;
   }
 
-  .contribution{
-    margin:12px 0 18px;
-  }
-
+  /* ===== Contribution Bar ===== */
+  .contribution{margin:12px 0 18px}
   .contribution-label{
     font-size:0.9rem;
     color:var(--text-sub);
-    margin-bottom:6px;
     display:flex;
     justify-content:space-between;
+    margin-bottom:6px;
   }
-
   .bar-bg{
     width:100%;
     height:10px;
@@ -87,7 +83,6 @@
     border-radius:999px;
     overflow:hidden;
   }
-
   .bar-fill{
     height:100%;
     background:linear-gradient(90deg,var(--accent-net),var(--accent-sec));
@@ -133,14 +128,17 @@
     color:var(--text-sub);
     font-size:0.9rem;
   }
-</style>
+  </style>
 </head>
+
 <body>
 <div class="container">
 
+<!-- ================= Header ================= -->
 <header>
   <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap">
-    <img src="./백정이.jpg" alt="백정이 프로필 사진" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:2px solid #334155" />
+    <img src="./백정이.jpg" alt="백정이 프로필 사진"
+         style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:2px solid #334155" />
     <div>
       <h1>백정이</h1>
       <h2>Network Engineer · Security Infrastructure</h2>
@@ -149,13 +147,28 @@
         안정성과 보안을 동시에 고려한 인프라를 설계·구축하는 엔지니어를 지향합니다.
       </p>
       <div class="contact">
-        📧 qorwjddl1234@naver.com · ☎ 010-7520-2175 · 📍 Seoul<br />
-        GitHub: <a href="https://github.com/bjy5656" target="_blank">github.com/bjy5656</a>
+        📧 qorwjddl1234@naver.com · 📍 Seoul<br />
+        GitHub:
+        <a href="https://github.com/bjy5656" target="_blank">github.com/bjy5656</a>
       </div>
     </div>
   </div>
 </header>
 
+<!-- ================= Certifications ================= -->
+<section>
+  <h3>Certifications</h3>
+  <div class="card">
+    <ul>
+      <li>CCNA (Cisco)</li>
+      <li>네트워크관리사 2급</li>
+      <li>정보처리기사</li>
+      <li>건축기사</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Core Skills ================= -->
 <section>
   <h3>Core Skills</h3>
   <div class="grid">
@@ -169,155 +182,114 @@
         <li>GNS3, Packet Tracer 기반 설계·실습</li>
       </ul>
     </div>
+
     <div class="card">
       <h4>System & Server</h4>
       <ul>
         <li>Linux (Rocky Linux) 계정·권한·서비스 관리</li>
-        <li>FTP / TFTP / DNS 서버 구축</li>
+        <li>FTP / TFTP / DNS / WEB 서버 구축</li>
         <li>firewalld, SSH 공개키 인증</li>
         <li>DBMS 이중화 및 정기 백업</li>
       </ul>
     </div>
+
     <div class="card">
       <h4>Security</h4>
       <ul>
         <li>주요정보통신기반시설 기준 취약점 점검</li>
         <li>네트워크·DBMS·웹 취약점 진단</li>
         <li>패킷 캡처 및 분석 (Wireshark)</li>
+        <li>Nmap 실습</li>
         <li>권한 상승 / Race Condition 실습</li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- ================= Projects ================= -->
 <section>
   <h3>Projects & Portfolio</h3>
 
+  <!-- SafeDugout -->
   <div class="card">
     <h4>중간 프로젝트 · SafeDugout (웹 개발)</h4>
     <div class="contribution">
       <div class="contribution-label"><span>개인 기여도</span><span>25%</span></div>
       <div class="bar-bg"><div class="bar-fill" style="width:25%"></div></div>
     </div>
+
+    <p><strong>작업기간</strong> : 2025.07.30 ~ 2025.08.29<br />
+       <strong>작업인원</strong> : 3명<br />
+       <strong>사용기술</strong> : VS Code, Java, Apache Tomcat, Oracle 21c</p>
+
     <p>
-      <strong>작업기간</strong> : 2025.07.30 ~ 2025.08.29<br />
-      <strong>작업인원</strong> : 3명<br />
-      <strong>사용기술</strong> : VS Code, Java, Apache Tomcat, Oracle 21c
+      MVC2 패턴 기반 웹 서비스로, 백엔드 구조 설계 및
+      메인 페이지, 아이디/비밀번호 찾기, 공지사항 기능을 담당했습니다.
     </p>
-    <p>
-      야구 커뮤니티 및 굿즈 중고거래 플랫폼을 제공하는 웹 서비스를 팀원들과 함께 개발한 프로젝트입니다.
-      MVC2 패턴을 기반으로 백엔드 구조를 설계하였으며, View 영역에서는 EL과 JSTL을 활용하여 데이터 출력과 흐름을 구현했습니다.
-      프로젝트에서 백엔드 개발 기준으로 메인 페이지, 아이디/비밀번호 찾기, 메인 공지사항 기능을 담당했습니다.
-    </p>
+
     <ul>
-      <li>Servlet / JSP / MyBatis 기반 MVC2 아키텍처</li>
-      <li>Oracle DB 연동 및 CRUD 구현</li>
-      <li>EL, JSTL 기반 View 로직 구성</li>
+      <li>Servlet / JSP / MyBatis 기반 MVC2 구조</li>
+      <li>Oracle DB 연동 및 데이터 조회·수정</li>
+      <li>EL, JSTL 기반 View 로직 구현</li>
     </ul>
-    <a class="btn" href="https://www.notion.so/1-SafeDugout_-2807b112410a8118a0cad8754224c885" target="_blank">📘 프로젝트 노션 보기</a>
-    <a class="btn" href="https://github.com/Team1-SafeDugout/SafeDugout_backend.git" target="_blank">🐙 GitHub Repository</a>
-    <a class="btn" href="./safe_dugout_포트폴리오_중간프로젝트(웹개발)_백정이.pdf" target="_blank">📄 포트폴리오 PDF</a>
+
+    <a class="btn" href="https://www.notion.so/1-SafeDugout_-2807b112410a8118a0cad8754224c885" target="_blank">📘 노션</a>
+    <a class="btn" href="https://github.com/Team1-SafeDugout/SafeDugout_backend.git" target="_blank">🐙 GitHub</a>
+    <a class="btn" href="./safe_dugout_포트폴리오_중간프로젝트(웹개발)_백정이.pdf" target="_blank">📄 PDF</a>
   </div>
 
+  <!-- Semi Project -->
   <div class="card">
     <h4>세미 프로젝트 · 대학 네트워크 인프라 구축</h4>
     <div class="contribution">
       <div class="contribution-label"><span>개인 기여도</span><span>20%</span></div>
       <div class="bar-bg"><div class="bar-fill" style="width:20%"></div></div>
     </div>
-    <p>
-      <strong>작업기간</strong> : 2025.10.22 ~ 2025.10.28<br />
-      <strong>작업인원</strong> : 6명<br />
-      <strong>사용기술</strong> : VMware, Rocky Linux, GNS3, Packet Tracer
-    </p>
-    <p>
-      가상의 대학교 환경을 설정하여 기관 규모와 목적에 맞는 네트워크 인프라 및 서버를 구축한 프로젝트입니다.
-      VLAN 기반 네트워크 분리, 라우팅 및 NAT 설정을 통해 내부망을 구성하고,
-      DNS·FTP·TFTP 서버를 직접 구축하여 서비스 운영 환경을 구현했습니다.
-      또한 Kali Linux를 활용한 기본적인 보안 진단을 수행했습니다.
-      본 프로젝트에서 네트워크 설계, 라우팅·NAT 설정, DNS/FTP/TFTP 서버 구축 및 테스트를 담당했습니다.
-    </p>
+
+    <p><strong>작업기간</strong> : 2025.10.22 ~ 2025.10.28<br />
+       <strong>작업인원</strong> : 6명<br />
+       <strong>사용기술</strong> : VMware, Rocky Linux, GNS3, Packet Tracer</p>
+
     <ul>
-      <li>VLAN 및 NAT 기반 내부 네트워크 분리</li>
-      <li>Routing, NAT 설정 및 트래픽 흐름 설계</li>
-      <li>DNS / FTP / TFTP 서버 구축 및 운영 테스트</li>
+      <li>네트워크 설계, Routing / NAT 구성</li>
+      <li>DNS / FTP / TFTP 서버 구축 및 테스트</li>
+      <li>Kali Linux 기반 기본 보안 진단</li>
     </ul>
-    <a class="btn" href="https://www.notion.so/2a87b112410a81809573ff810dedc291" target="_blank">📘 프로젝트 노션 보기</a>
-    <a class="btn" href="https://drive.google.com/drive/folders/19FKuGD6QTXYn2zzSwXZEZDse-zZ7YOZQ" target="_blank">☁️ 서버 자료 (Drive)</a>
-    <a class="btn" href="./SUN교사_포트폴리오_세미프로젝트(인프라구축)_백정이.pdf" target="_blank">📄 포트폴리오 PDF</a>
+
+    <a class="btn" href="https://www.notion.so/2a87b112410a81809573ff810dedc291" target="_blank">📘 노션</a>
+    <a class="btn" href="https://drive.google.com/drive/folders/19FKuGD6QTXYn2zzSwXZEZDse-zZ7YOZQ" target="_blank">☁️ Drive</a>
   </div>
 
+  <!-- Final Project -->
   <div class="card">
-    <h4>패킷 분석 보고서</h4>
-    <p>
-      <strong>작업기간</strong> : 2025.10.23<br />
-      <strong>작업인원</strong> : 1명<br />
-      <strong>사용기술</strong> : Wireshark, Nmap
-    </p>
-    <p>
-      Wireshark를 활용하여 ICMP, TCP, UDP 패킷 흐름을 분석하고,
-      Nmap을 이용해 SYN, UDP 스캔을 수행했을 때 발생하는 패킷의 특성과 차이를 정리한 분석 보고서입니다.
-      방화벽 설정 유무에 따른 응답 패턴과 패킷 구조를 비교·분석했습니다.
-    </p>
-    <ul>
-      <li>TCP SYN / UDP 스캔 패킷 분석</li>
-      <li>ICMP, TCP, UDP 패킷 흐름 비교</li>
-      <li>네트워크 통신 동작 원리 분석</li>
-    </ul>
-    <a class="btn" href="./패킷분석보고서_백정이.pdf" target="_blank">📄 보고서 열람</a>
-  </div>
-
-  <div class="card">
-    <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 및 웹 서비스 구축</h4>
+    <h4>최종 프로젝트 · 기업 맞춤 보안 인프라 구축</h4>
     <div class="contribution">
       <div class="contribution-label"><span>개인 기여도</span><span>25%</span></div>
       <div class="bar-bg"><div class="bar-fill" style="width:25%"></div></div>
     </div>
-    <p>
-      <strong>작업기간</strong> : 2025.11.03 ~ 2025.12.12<br />
-      <strong>작업인원</strong> : 3명<br />
-      <strong>사용기술</strong> : VMware, Rocky Linux, Kali Linux, GNS3, Packet Tracer, Wireshark, Burp Suite, 문서도구(Excel/Word/HWP)
-    </p>
-    <p>
-      웹 서비스를 제공하는 가상의 기업 환경을 설정하고,
-      보안 침해 시나리오와 인프라 구성도를 기반으로
-      주요정보통신기반시설 취약점 분석·평가 가이드를 기준으로
-      네트워크, DBMS, 웹 서비스 전반에 대한 취약점 진단 및 보안 설정을 수행한 프로젝트입니다.
-      또한 PHP 기반 웹 서비스에 대한 취약점 진단을 수행했습니다.
-      본 프로젝트에서 네트워크 인프라 구축, DBMS 보안 설정,
-      VPN 구성, DB 이중화 및 백업 설계를 담당했습니다.
-    </p>
+
+    <p><strong>작업기간</strong> : 2025.11.03 ~ 2025.12.12<br />
+       <strong>작업인원</strong> : 3명</p>
+
     <ul>
-      <li>네트워크 구축 및 VPN(GRE/IPsec) 구성</li>
-      <li>DBMS 보안 설정 및 이중화·정기 백업 설계</li>
-      <li>주요정보통신기반시설 기준 취약점 진단 및 조치</li>
+      <li>네트워크 인프라 설계 및 VPN(GRE/IPsec)</li>
+      <li>DBMS 보안 설정, 이중화·백업</li>
+      <li>주요정보통신기반시설 기준 취약점 진단</li>
     </ul>
-    <a class="btn" href="https://hyper-carob-48d.notion.site/_3-29d13fe23d828055838ad6cd92cf0b7d" target="_blank">📘 프로젝트 노션 보기</a>
-    <a class="btn" href="https://drive.google.com/drive/folders/1aSK6JrlMRjE3QyiOq4JC9tddfvfrHXpq" target="_blank">☁️ 서버 자료 (Drive)</a>
-    <a class="btn" href="./틈새걸음_포트폴리오_최종프로젝트(기업맞춤보안인프라및웹서비스구축)_백정이.pdf" target="_blank">📄 포트폴리오 PDF</a>
+
+    <a class="btn" href="https://hyper-carob-48d.notion.site/_3-29d13fe23d828055838ad6cd92cf0b7d" target="_blank">📘 노션</a>
+    <a class="btn" href="https://drive.google.com/drive/folders/1aSK6JrlMRjE3QyiOq4JC9tddfvfrHXpq" target="_blank">☁️ Drive</a>
+    <a class="btn" href="./틈새걸음_포트폴리오_최종프로젝트(기업맞춤보안인프라및웹서비스구축)_백정이.pdf" target="_blank">📄 PDF</a>
   </div>
 </section>
 
-<section>
-  <h3>Certifications</h3>
-  <div class="card">
-    <ul>
-      <li>CCNA (Cisco)</li>
-      <li>네트워크관리사 2급</li>
-      <li>정보처리기사</li>
-      <li>건축기사</li>
-    </ul>
-  </div>
-</section>
-
+<!-- ================= Career Goal ================= -->
 <section>
   <h3>Career Goal</h3>
   <div class="card">
-    <p>
-      네트워크 엔지니어로서 안정적인 인프라 운영 경험을 축적한 뒤,
-      보안 솔루션 및 침해사고 대응 영역까지 확장 가능한
-      인프라·보안 융합 엔지니어로 성장하는 것이 목표입니다.
-    </p>
+    네트워크 엔지니어로서 안정적인 인프라 운영 경험을 축적한 뒤,
+    보안 솔루션 및 침해사고 대응 영역까지 확장 가능한
+    인프라·보안 융합 엔지니어로 성장하는 것이 목표입니다.
   </div>
 </section>
 
